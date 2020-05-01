@@ -1,0 +1,37 @@
+\newtcolorbox{addbox}{% raise job title
+    blanker, enhanced,
+    left=18pt, right=0pt, top=0pt, boxrule=0pt,
+    borderline west={3pt}{4.5pt}{gray},
+    colback=white,
+    coltitle=black,
+    colframe=white,
+    grow to left by=15pt,
+    size=normal
+}
+
+\newtcolorbox{skills}{%
+  sidebyside,
+    size=minimal,
+    colback=white,
+    lower separated=false,
+    sidebyside align=top}
+    
+\newtcolorbox{facilities}{%
+    sidebyside,
+    size=minimal,
+    colback=white,
+    lower separated=false,
+    sidebyside align=top,
+    bottom=0pt
+  }
+        
+\newtcolorbox{jobinfo}{%
+    sidebyside,
+    size=minimal,
+    colback=white,
+    lower separated=false,
+    sidebyside align=top}
+    
+  \newenvironment{describe}{\justify\noindent\begin{multicols}{2}}{\end{multicols}}
+  \newenvironment{coursedesc}[1]{\normalsize\begin{justify}\noindent{\textbf{#1:}}\small}{\end{justify}}
+  \newenvironment{category}[1]{{\huge\sc\textbf{#1}}\vspace{4pt}\RaggedRight\catrule\normalsize}{\vspace{12pt}}

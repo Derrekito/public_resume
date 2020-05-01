@@ -1,0 +1,13 @@
+\documentclass[letter]{article}
+\usepackage[pdftex]{color,graphicx,epsfig}
+\usepackage[left=2cm,top=2.cm,bottom=2.cm,right=2cm]{geometry}
+\usepackage[proportional,scaled=1.064]{erewhon}
+\usepackage[erewhon,vvarbb,bigdelims]{newtxmath}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{\textosf{#1}}
+\usepackage[final]{pdfpages}
+\begin{document}
+% for reference: \includepdf {path to pdf}
+%\includepdf[pages={-},openright,nup=1x2,landscape,signature=4]{Work_History_Style.pdf}%signature is number of pages to have in a package (about page numbers/2) but a multiple of 4
+\includepdf[pages={-},openright,nup=1x2,landscape,signature=8]{Work_History_Style.pdf}%signature is number of pages to have in a package (about page numbers/2) but a multiple of 4 (because 2 front/back, each)
+\end{document}

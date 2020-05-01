@@ -1,0 +1,44 @@
+\documentclass[11pt,notitlepage,letterpaper]{article}
+\input{Resources/usepackages}
+\input{Resources/PII}
+\input{Macros/newcommands}
+\input{Macros/newenvironments}
+\input{Resources/utype}
+\input{Resources/settingsSections}
+\input{Resources/settingsHeaderFooter}
+\input{Macros/renewcommands}
+\input{Macros/renewenvironments}
+\input{Resources/measurements}
+
+\pagestyle{fancy}
+% End of Preamble
+% ----------------------------------------
+\begin{document}
+% set page style and title
+%\thispagestyle{empty}   % sets for the first page only
+%\input{MiscSections/coverletter}
+\thispagestyle{empty}   % sets for the first page only
+%\newpage
+\setcounter{page}{1}
+\thispagestyle{empty}
+{\let\newpage\relax\maketitle}
+\vspace{30pt}
+\begin{category}{Education}
+  \input{EDU/education}
+\end{category}
+\begin{category}{Skills}
+  \input{MiscSections/skillsList}
+\end{category}
+\begin{category}{Experience}
+  \vspace{-12pt}
+  \input{Jobs/Kelly}
+  \input{Jobs/AFRL}
+  \input{Jobs/Pact}
+  \input{Jobs/GCYS/GCYS}
+  \input{Jobs/EglinTaxCenter}
+  \input{Jobs/Proprietorship}
+  \input{Jobs/UTEPlab}
+  \input{Jobs/UTEPintern}
+  \input{Jobs/CDSR}
+\end{category}
+\end{document}

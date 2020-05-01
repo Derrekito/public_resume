@@ -1,0 +1,66 @@
+\newcommand{\flatten}{\noindent\justify}
+\renewcommand{\headrulewidth}{0.25pt}
+\newcommand{\setcolor}[1]{\hypersetup{urlcolor=#1}}  
+\newcommand{\email}[1]{\setcolor{blue}\href{mailto:#1}{#1}\\}
+\newcommand{\colbreak}{\vfill\null\columnbreak}
+\newcommand{\datethru}[2]{#1 -- #2\vspace{-8pt}}
+\newcommand{\phone}[1]{\setcolor{black}\phonenumber[country=US]{#1}}
+
+\newcommand{\supervisor}[4]{%
+\flatten{\bfseries Supervisor \break}\parbox[t]{\textwidth}{
+%\noindent\normalsize%\setcolor{black}%
+\normalsize
+  #1\\[-3pt]
+  {\footnotesize #2%
+    \setcolor{blue}\href{mailto:#3}{#3}\\[-3pt]
+    \phone{#4}\\[-3pt]
+    Contact Supervisor: YES
+  }%
+}}
+
+\newcommand{\position}[3]{{%
+    \small
+    \textbf{Title:} #1\\[3pt]
+    \textbf{Salary:} \$#2 per hour\\[3pt]
+    \textbf{Hours Per Week:} #3 hrs/wk}}
+
+\newcommand{\mydash}{\normalfont\normalsize\hdashrule[3pt][x]{\fill}{0.1pt}{3pt}}
+
+\newcommand{\mydivider}{%
+  \begin{center}%
+    \def\svgwidth{\linewidth}%
+    \includegraphics[width=0.45\svgwidth,page=1]{Dividers/myDivider8.pdf}%
+  \end{center}}%
+
+\newcommand{\workaddress}[3]{%
+  \scriptsize%
+  {#1}\\
+  {#2}\\
+  \setcolor{black}\phonenumber[country=US]{#3}\\}
+
+\newcommand{\catrule}{\\[-3pt]\nointerlineskip\noindent\rule{\textwidth}{1pt}}
+
+% content section headers
+
+% \newcommand{\about}[1]{\flatten\vspace{-6pt}\subsubsection*{About}\parbox[t]{\textwidth}{#1}}
+\newcommand{\about}[1]{\flatten{\bfseries About: }\parbox[t]{\textwidth-38pt}{#1}}
+\newcommand{\jobtitle}[1]{\flatten\vspace{-8pt}{\bfseries Title: }\parbox[t]{\textwidth}{#1}}
+% \newcommand{\duties}{\subsubsection*{Duties}\flatten}
+\newcommand{\duties}{\flatten{\bfseries Duties}}
+% \newcommand{\accomplishments}{\subsubsection*{Accomplishments}\flatten}
+\newcommand{\accomplishments}{\flatten{\bfseries Accomplishments}}
+%%%%\newcommand{\jobtitle}[1]{\flatten\vspace{-8pt}{\bfseries Title: }{#1}}
+%\newcommand{\jobtitle}[1]{{\bfseries Title: }\parbox[t]{\textwidth}{#1}}
+\newcommand{\jobskills}{\subsubsection*{Skills}\flatten}
+\newcommand{\employer}[3]{\break\subsection*{#1\mydash\parbox[t]{3cm}{\datethru{#2}{#3}}}}
+
+\newcommand{\partner}[4]{%
+\flatten\parbox[t]{\textwidth}{{\bfseries Partner Contact\\}
+%\noindent\normalsize%\setcolor{black}%
+\normalsize
+  #1\\[-3pt]
+  {\footnotesize #2%
+    \setcolor{blue}\href{mailto:#3}{#3}\\[-3pt]
+    \phone{#4}\\[-3pt]
+  }%
+}}

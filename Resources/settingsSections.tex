@@ -1,0 +1,40 @@
+%
+% hcommandi is the sectioning command to be redefined, i. e., \part, \chapter, \section,
+% \subsection, \subsubsection, \paragraph or 
+% \subparagraph.
+% The paragraph shape is set by hshapei
+% hformati is the format to be applied to the whole title—label and text. This part can contain
+% vertical material (and horizontal with some shapes) which is typeset just after the space above the title.
+% The label is defined in hlabeli. You may leave it empty if there is no section label at that level, but
+% this is not recommended because by doing so the number is not suppressed in the table of contents and running heads.
+% hsepi is the horizontal separation between label and title body and must be a length (it must not be empty). This space is vertical in display shape; in frame it is the distance from text to frame.
+% Both hlabeli and hsepi are ignored in starred versions of sectioning commands. If you are using picture and the like, set this parameter to 0 pt.
+% hbefore-codei is code preceding the title body. The very last command can take an argument,
+% which is the title text.7 However, with the package option explicit the title must be given explicitly with #1 (see below).
+% hafter-codei is code following the title body. The typeset material is in vertical mode with hang,
+% block and display; in horizontal mode with runin and leftmargin (2.7 with the latter, at the beginning of the paragraph). Otherwise is ignored.
+%
+% \titleformat{hcommandi}[hshapei]
+%   {hformati}{hlabeli}{hsepi}{hbefore-codei}
+%   [hafter-codei]
+%
+%\titleclass{\facility}{}[]
+%\titleformat{\section}[hang]{\bf}{}{0pt}{\bfseries\Large\uppercase}[\titlerule]%\vspace{2pt}\titlerule]
+
+%\titleformat{\section}[block]{\huge\rmfamily\raggedright}{}{}{\bfseries}[{\vspace{-6.5pt}\titlerule[1pt]}]
+
+\titleformat{\section}[block]{\huge\rmfamily\raggedright}{}{}{\bfseries}[{\titlerule[1pt]}]
+
+%\titleformat{\subsection}{}{}{}{\bfseries\large}%[]
+%\titleformat{\subsubsection}{}{}{}{\bfseries\big}%[]
+
+%\titlespacing*{<command>}{<left>}{<before-sep>}{<after-sep>}
+%
+%\titlespacing*{\section}{}[bf]{}{}{}{}[]
+%\titlespacing*\section{0pt}{0pt}{0pt}%{12pt plus 4pt minus 2pt}{2pt plus 2pt minus 2pt}%
+%\titlespacing*\subsection{0pt}{0pt}{0pt}
+%\titlespacing*\subsubsection{0pt}{0pt}{0pt}
+
+\titlespacing{\section}{0pt}{0pt}{0pt}
+\titlespacing{\subsection}{0pt}{0pt}{0pt}
+\titlespacing{\subsubsection}{0pt}{0pt}{0pt}%-10pt}

@@ -1,0 +1,91 @@
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%\newcommand{\tabitem}[1]{~~\llap{\small\textbullet}~~\parbox[t]{0.5\linewidth}{#1}}
+\newcommand{\tabitem}[1]{~~\llap{\small\textbullet}~~#1}
+\setlength{\columnsep}{0.5cm}
+\newenvironment{skills}{%
+\begin{tabular}{l l}}{\end{tabular}}
+\begin{multicols}{2}
+
+%\subsubsection*{Office Productivity}
+\begin{itemize}[leftmargin=*]
+    \item Office Productivity\hfill
+\begin{skills}
+    \tabitem{Libre Office}      & \tabitem{Microsoft Office} \\ 
+    \tabitem{GDocs}             & \tabitem{GNU/Slackware}    \\    
+    \tabitem{Ubuntu}            & \tabitem{Windows XP/7/10}  \\
+    \tabitem{\LaTeX}            & \tabitem{Emacs}
+\end{skills}\hfill
+%\subsubsection*{Programming Languages}
+\item Programming Languages\hfill
+\begin{skills}%
+    \tabitem{Assembly}                      & \tabitem{ANSI C}          \\
+    \tabitem{BASH}                          & \tabitem{JAVA}            \\
+    \tabitem{Python 2.7/36 \hspace{12pt}}   & \tabitem{JavaScript}      \\ 
+    \tabitem{Julia}           %& \tabitem{Emacs Lisp}%eLisp            
+\end{skills}
+\item Computer-aided Design and Sci Tools\hfill
+\begin{skills}
+    \tabitem{Verilog}\hspace{21pt}  & \tabitem{VHDL}    \\
+    \tabitem{OrCAD}                 & \tabitem{Matlab}  \\
+    \tabitem{Eagle}                 & \tabitem{Pspice}              \\
+    \tabitem{Proteus}               & \tabitem{Quartus II}          \\ 
+    \tabitem{SciPy}                 & \tabitem{IPython}             \\
+    \tabitem{Blender}               & \tabitem{SketchUp}
+\end{skills}
+\item Program Development\hfill
+\begin{skills}
+    \tabitem{Git}\hspace{37pt}  & \tabitem{GNU C Compiler}          \\
+    \tabitem{Eclipse}           & \tabitem{Arduino IDE}             \\
+    \tabitem{GDB}               & \tabitem{Android Studio}          \\
+    \tabitem{OpenJDK}           & \tabitem{MonoDevelop}             \\
+    \tabitem{AsmIDE}            & \tabitem{IntelliJ IDEA}  
+\end{skills}
+\item Hobby Electronic Hardware Tools\hfill
+\begin{skills}
+    \tabitem{Arduino \hspace{12pt}}     & \tabitem{Raspberry Pi}    \\ 
+    \tabitem{Buspirate}                 & \tabitem{circuit soldering}   
+ %   \tabitem{PCB etching}  
+    %& \tabitem{Rubber Ducky} \\
+    %\tabitem{LAN Turtle}      
+%    \tabitem{ssh, telnet, UART, JTAG, et. cetera}
+\end{skills}
+\item Web Development\hfill
+\begin{skills}
+    \tabitem{Node.js}\hspace{16pt}  & \tabitem{underscore}              \\ 
+    \tabitem{HTML5}                 & \tabitem{WordPress}               \\
+    \tabitem{CSS3, sass, SCSS}      & \tabitem{Jinja2}                  \\
+    \tabitem{SVG, SnapSVG}          & \tabitem{MongoDb JS}              \\
+    \tabitem{D3}                    & \tabitem{GDAX}                    \\
+    \tabitem{jQuery}                & \tabitem{Google App Engine} 
+\end{skills}
+
+%\subsubsection*{IT Hardware/Software}
+\item IT Hardware/Software\hfill
+\begin{skills}
+    \tabitem{GNU/Linux}             & \tabitem{Windows Server 08/12}    \\ 
+    \tabitem{Windows RDP}           & \tabitem{Active Directory}        \\ 
+    \tabitem{Dell iDRAC}            & \tabitem{CISCO Meraki MX64}       \\
+    \tabitem{Jupyter}               & \tabitem{TightVNC, RealVNC}       \\ 
+    \tabitem{Terminate RJ-45}       & \tabitem{DDWRT, OpenWRT}          \\ %Tomato}  \\
+    \tabitem{MongoDB}               & \tabitem{Docker}                  \\
+    \tabitem{pfSense}               & \tabitem{Snort, nmap, iptables}
+\end{skills}
+\end{itemize}
+\end{multicols}
+
+%\tabitem{ssh, telnet, PuTTY}      \\
+%\tabitem{Wireshark}             & \tabitem{Snort, nmap, iptables}
+%\tabitem{ASUS RN-16 and ASUS RT-AC68R} \\ 
+%\subsubsection*{General computer hardware}
+%\begin{skills}
+%\tabitem{Many years of experience configuring and building PCs/servers/video processing workstations/security camera workstations} & {}
+%\end{skills}
+%\subsubsection*{Misc}
+%\begin{skills}
+%    \tabitem{Docker}    & \tabitem{Virtualbox}\\
+%    \tabitem{Wine/Proton}
+%\end{skills}
+
+%\tabitem Corrosion of Titanium Alloys for Orthopedic Surgery

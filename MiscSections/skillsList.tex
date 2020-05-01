@@ -1,0 +1,107 @@
+
+% \renewenvironment{itemize}{\begin{tabular}{l l}}{\end{tabular}\break}  % breaks if moved
+% \renewcommand{\item}[1]{~~\llap{\small\textbullet}~~#1}
+% %\textperiodcentered
+% \begin{skills}
+%   \begin{longtable}{ l l }
+%     \multicolumn{2}{ l }{\textbf{IT Hardware/Software}}               \\
+%   \item{Windows RDP}           & \item{Active Directory}              \\ 
+%   \item{Dell iDRAC}            & \item{CISCO Meraki MX64}             \\
+%  % \item{nmap, netcat}          & \item{DDWRT, OpenWRT}                \\
+%   \item{MongoDB}               & \item{Veracrypt, LUKS}     \\
+% %  \item{BusPirate, PuTTY, ssh} 
+%   \item{Docker}                & \item{TightVNC, RealVNC}             \\
+%     \multicolumn{2}{ l }{\textbf{OS Distributions}}                   \\
+%   \item Knoppix    & \item Backtrack/Kali                             \\
+%   \item GNU/Slackware & \item Ubuntu/Mint                             \\
+%   \item{Windows Server 08/12}                                         \\[12pt]
+%       \multicolumn{2}{ l }{\textbf{Programming Languages}}    \\
+% \item{Assembly}         & \item{ANSI C}                   \\
+% \item{BASH}             & \item{JAVA}                     \\
+% \item{Python 2.7/3.6}   & \item{JavaScript}               \\ 
+% \item{Julia}                                              \\%[12pt]
+
+%   \end{longtable}
+%   \tcblower
+%   \begin{longtable}{ l l }
+    
+%     \multicolumn{2}{ l }{\textbf{Debuggers}}                          \\
+%   \item{GDB} & \item{IDA PRO}                                         \\
+%   \item{FireBug}                                                      \\[12pt]
+    
+%     \multicolumn{2}{ l }{\textbf{Security Tools}}                     \\
+%   \item{Snort} & \item{openvpn, stunnel}                              \\
+%   \item{Wireshark, tcpdump} & \item{pfSense, iptables}                \\[12pt]
+%     \multicolumn{2}{ l }{\textbf{Data Recovery}}                      \\
+%   \item{dd, ddrescue}            & \item {SpinRite 6.0}               \\
+%   \item{photorec,extundelete}    & \item {scalpel}                    \\
+%   \item{foremost}              &   \item{The Sleuth Kit (autopsy)}    \\[12pt]
+%       \multicolumn{2}{ l }{\textbf{Password Cracking}}                  \\
+% \item{L0phtCrack}            &  \item{Cain and Abel}                \\
+% \item{John the Ripper} &  \item{Aircrack-NG, Kismet}                %\\[12pt]  
+  
+\renewcommand{\item}[1]{~~\llap{\small\textbullet}~~#1\\}
+%
+\vspace{-6pt}
+\begin{tcbitemize}[raster columns=3, raster equal height,
+  colframe=white, colback=white, coltitle=black,
+  size=minimal,
+%  raster equal skip=0pt,
+%  raster column skip=6pt,
+  %boxrule=0pt,
+  enhanced,fonttitle=\bfseries]
+  
+   \tcbitem[title=Programming Languages\vspace{6pt}]{
+  \item{Assembly}
+  \item{ANSI C}                       
+  \item{BASH} 
+  \item{JAVA}                         
+  \item{Python} 
+  \item{JavaScript}                    
+  \item{Julia}
+  }
+
+  \tcbitem[title=CAD and Sci Tools\vspace{6pt}]{
+  \item{Verilog, VHDL} 
+  \item{OrCAD PSPICE}                 
+  \item{Proteus} 
+  \item{Quartus II}
+  \item{Jupyter (IPython, IJulia)} 
+  \item{Matlab}                          
+  }
+  \tcbitem[title=Program Development\vspace{6pt}]{
+  \item{Git}                       
+  \item{MonoDevelop}                 
+  \item{Eclipse, Android Studio}   
+  \item{OpenJDK, IntelliJ IDEA}                      
+  \item{AsmIDE}                    
+  \item{Electron}
+  }
+\end{tcbitemize}
+\vspace{6pt}
+  \begin{tcbitemize}[raster columns=3, raster equal height,
+                     colframe=white, colback=white, coltitle=black,
+                     size=minimal, raster column skip=6pt, enhanced,
+                     fonttitle=\bfseries]
+  \tcbitem[title=Web Development\vspace{6pt}]{
+  \item{Google App Engine} 
+  \item{D3, jQuery, Node.js}          
+  \item{HTML5}
+  \item{WordPress}                    
+  \item{CSS3, SCSS}
+  \item{Jinja2}                       
+  }
+
+  \tcbitem[title=Office Tools\vspace{6pt}]{
+  \item{\LaTeX} 
+  \item{GNU/Linux}
+  }  
+
+  \tcbitem[title=IT Software\vspace{6pt}]{
+  \item{Windows RDP} 
+  \item{Active Directory}
+  \item{MongoDB} 
+  \item{Docker}                      
+  }
+\end{tcbitemize}
+
